@@ -1,0 +1,329 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    position: sticky;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(231, 193, 193);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 15px 34px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 1px 1px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgba(253, 101, 0, 0.979);
+    background-color: black;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url(' bg2.webp') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bree Serif', serif;
+}
+
+#home a{
+    padding: 6px 20px;
+    border: 5px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    
+}
+#home a::hover{
+    border-color: purple;
+    background-color: black;
+
+}
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 10px -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .card:hover {
+      box-shadow:0 4px 8px 0 rgba(253, 101, 0, 0.979) ;
+  }
+   /* Float four columns side by side */
+   .c1 {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .r1 {margin: 10px -5px;}
+  
+  /* Clear floats after the columns */
+  .r1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .c1 {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .s1 {
+    box-shadow: 0 4px 8px 0 rgb(12, 12, 12);
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 70%;
+  }
+ 
+ 
+
+
+  .feed{
+    padding: 50px;
+    background-image: url(' bg4.webp');
+    background-size: cover;
+    height: 100%;
+
+}
+.feed h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.feed .feed_form{
+    text-align: center;
+
+}
+.feed .feed_form form{
+    padding: 20px;
+}
+.feed .feed_form form input{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border-color: rgba(253, 101, 0, 0.979);
+}
+.feed .feed_form form textarea{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border-color: rgba(253, 101, 0, 0.979);
+}
+.feed .feed_form form button{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+}
+.feed .feed_form form button:hover{
+    background-color: black;
+    color: rgba(253, 101, 0, 0.979);
+    border: none;
+    border-bottom: 4px solid rgba(253, 101, 0, 0.979);
+    transition: 0.5s;
+}
+footer{
+    background-color: #99a3a4;
+    padding: 10px;
+
+}
+footer .pages{
+    text-align: center;
+
+}
+footer .pages h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Baloo Bhai', cursive;
+    padding: 5px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgba(253, 101, 0, 0.979);
+    font-size: 15px;
+    font-family: 'Baloo Bhai', cursive;
+}
+footer .pages a:hover{
+    color: white;
+
+}
+footer .doc{
+    text-align: center;
+
+}
+footer .doc h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Baloo Bhai', cursive;
+    padding: 5px;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgba(253, 101, 0, 0.979);
+    font-size: 15px;
+    font-family: 'Baloo Bhai', cursive;
+}
+footer .doc a:hover{
+    color: white;
+    
+}
+footer .social{
+    text-align: center;
+
+}
+footer .social h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Baloo Bhai', cursive;
+    padding: 5px;
+}
+footer .social a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgba(253, 101, 0, 0.979);
+    font-size: 30px;
+    
+}
+footer .social a:hover{
+    color: white;
+}
+footer .contact{
+    text-align: center;
+
+}
+footer .contact h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Baloo Bhai', cursive;
+    padding: 5px;
+}
+footer .contact a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgba(253, 101, 0, 0.979);
+    font-size: 30px;
+}
+footer .contact a:hover{
+    color: white;
+}
